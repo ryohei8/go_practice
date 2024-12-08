@@ -1,5 +1,7 @@
 # database/sql パッケージ
 
+※このパッケージを実際に使うことは少ない。（oss を使うことが多い）
+
 ## パッケージの概要
 
 - database/sql パッケージは、Go 言語でデータベース操作を行うための標準ライブラリ
@@ -14,5 +16,3 @@
 ```go
 db, err := sql.Open("mysql", "user:password@tcp(127.0.0.1:3306)/mydb")
 ```
-
-# sql.ErrNoRows
