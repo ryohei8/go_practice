@@ -75,6 +75,20 @@ project/
 +-------------------+
 ```
 
+# 実装順
+
+```
+1. domain/model/         # モデルの定義
+2. domain/repository/    # リポジトリインターフェース
+3. domain/service/       # ドメインロジック
+4. usecase/              # ユースケース
+5. handler/              # HTTP リクエスト処理
+6. infrastructure/       # 外部リソースとの接続
+7. middleware/           # 認証やロギングの共通処理
+8. config/               # 設定ファイルや環境変数
+9. main.go               # アプリケーションのエントリーポイント
+```
+
 # 依存関係
 
 ```
