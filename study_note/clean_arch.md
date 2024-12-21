@@ -98,20 +98,25 @@ Domain (依存なし)
 1. Handler → Usecase
    依存関係の意味
    Handler は Usecase に依存しています。
-   Usecase がなければ、Handler はビジネスロジックを実行できないため、動作しません。
-   具体例
-   クライアントからリクエストが来た場合：
 
-Handler はリクエストを受け取るだけで、具体的なビジネスロジック（例えば、データの保存）は Usecase に任せます。
-Usecase が提供する機能を使って、Handler はレスポンスを生成します。
+   Usecase がなければ、Handler はビジネスロジックを実行できないため、動作しません。
+
+   Handler はリクエストを受け取るだけで、具体的なビジネスロジック（例えば、データの保存）は Usecase に任せます。
+
+   Usecase が提供する機能を使って、Handler はレスポンスを生成します。
 
 2. Usecase → Service/Repository
+
    依存関係の意味
    Usecase は Service や Repository に依存しています。
+
    ビジネスロジックを処理するために Service を呼び出し、データ操作のために Repository を利用します。
+
    Service や Repository がないと、Usecase は何もできません。
 
 3. Service → Repository
+
    依存関係の意味
    Service は Repository に依存しています。
+
    Repository がなければ、データベースや外部リソースとの通信ができません。
