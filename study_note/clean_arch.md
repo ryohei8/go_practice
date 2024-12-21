@@ -25,3 +25,15 @@ project/
 ├── middleware/ # 認証やロギングなどの共通機能
 ├── config/ # 設定ファイルや環境変数の管理
 └── main.go # アプリケーションのエントリーポイント
+
+# Flow
+
+1. Handler (リクエスト受信)
+   ↓
+2. Usecase (ユースケース実行)
+   ↓
+3. Domain (ビジネスロジックやモデル)
+   ↓
+4. Infrastructure (データ操作や外部連携)
+
+# 依存関係
