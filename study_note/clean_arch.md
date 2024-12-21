@@ -3,7 +3,6 @@
 # Directory Structure
 
 project/
-│
 ├── domain/ # エンティティやドメインロジック（アプリケーションの中心部分）
 │ ├── model/ # ドメインモデル（ビジネスデータの定義）
 │ ├── repository/ # インターフェース（データ操作の契約）
