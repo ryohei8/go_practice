@@ -16,7 +16,7 @@ func main() {
 	r := gin.Default()
 
 	// POST エンドポイント
-	r.GET("/gin", func(c *gin.Context) {
+	r.POST("/gin", func(c *gin.Context) {
 		var user User
 
 		// ShouldBindJSON は、JSON データをバインドして構造体に格納します。
